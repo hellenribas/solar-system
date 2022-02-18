@@ -10,7 +10,6 @@ class SolarSystem extends Component {
         <Title headline="Planetas" />
         {planets.map(({ name, image }) => (
           <section key={ name }>
-            {console.log(name)}
             <PlanetCard name={ name } image={ image } />
           </section>
         ))}
