@@ -1,3 +1,122 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('images/background.png');
+  color: rgb(236, 202, 140);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headers {
+  color: rgb(214, 221, 228);
+  font-size: 3rem;
   text-align: center;
+}
+
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.cards p {
+  font-size: 2rem;
+}
+
+.solar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.solar h2 {
+  font-size: 3rem;
+  margin: 3% 0;
+}
+
+.missionCard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.missionCard h2 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+}
+
+.mission {
+  align-items: center;
+  background-image: url('images/skyStar.png');
+  background-size: cover;
+  border: solid rgba(255, 255, 255, 0.507);
+  border-radius: 8%;
+  box-shadow: 4px 4px 4px 4px rgba(161, 177, 200, 0.281) inset;
+  display: flex;
+  flex-direction: column;
+  margin: 7% 5%;
+  padding: 30% 40%;
+  text-align: center;
+}
+
+.mission p {
+  font-size: 1.22rem;
+}
+
+.sectionMission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img:hover {
+  animation: planet 15s alternate infinite;
+}
+
+.cards:hover {
+  animation: title 15s alternate infinite;
+}
+
+.mission:hover {
+  background-image: url('images/light.png');
+  background-size: cover;
+  color: aliceblue;
+}
+
+@keyframes planet {
+
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes title {
+
+  0% {
+    color: rgb(167, 210, 218);
+    font-weight: 700;
+  }
+
+  100% {
+    color: rgb(243, 242, 242);
+    font-weight: 700;
+  }
 }
